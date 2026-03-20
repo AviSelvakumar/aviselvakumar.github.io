@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (
+            window.location.protocol === 'http:' &&
+            window.location.hostname !== 'localhost' &&
+            window.location.hostname !== '127.0.0.1'
+        ) {
+            window.location.replace(`https://${window.location.host}${window.location.pathname}${window.location.search}${window.location.hash}`);
+        }
+    </script>
     <title>Avinash Selvakumar | Developer Portfolio</title>
     <meta name="description" content="Avinash Selvakumar's portfolio site. Explore projects, skills, and contact details through an interactive terminal-style experience.">
     <meta name="keywords" content="Avinash Selvakumar, Avinash, developer portfolio, web developer, Python, JavaScript, C++, Roblox commissions">
